@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Chat Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="top-icons">
+        <i class="fas fa-th-large"></i> <!-- Grid or Dashboard icon -->
+        <i class="fas fa-edit"></i> <!-- Edit/Pencil icon -->
+      </div>
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/gp.png" alt="ChatGPT Logo" />
+        </div>
+        <div class="logo-text">ChatGPT</div>
+      </div>
+      
+    </aside>
+    <!-- Chat Area -->
+    <div class="chat-section">
+      <div class="dropdown">
+        <span>ChatGPT 4o</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <!-- Chat Display Area -->
+      <div class="chat-container">
+        
+        
+        <div class="chat-display" id="chatDisplay">
+          <h1 class="typing-animation" id="loadingMessage">What can I help you with?</h1>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <button class="attachment-button">📎</button> <!-- Attachment Icon -->
+          <input type="text" id="userPrompt" placeholder="Type your message here..." />
+          <button class="send-button">⬆️</button> <!-- Up Arrow Send Icon -->
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="feature-button">
+          <i class="fas fa-clipboard fa-icon"></i> Create image
+        </button>
+        <button class="feature-button">
+          <i class="fa-solid fa-chart-bar"></i> summarize text
+        </button>
+        <button class="feature-button">
+          <i class="fa-solid fa-code"></i> Code
+        </button>
+        <button class="feature-button">
+          <i class="fa fa-tasks"></i> Make plan
+        </button>
+        <button class="feature-button">
+          <i class="fa-solid fa-ellipsis"></i> More
+        </button>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
